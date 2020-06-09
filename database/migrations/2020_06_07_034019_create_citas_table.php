@@ -8,8 +8,6 @@ class CreateCitasTable extends Migration
 {
     /**
      * Run the migrations.
-     *
-     * @return void
      */
     public function up()
     {
@@ -23,16 +21,14 @@ class CreateCitasTable extends Migration
             $table->foreign('persona_id')->references('id')->on('personas');
             $table->BigInteger('t_tramite_id')->unsigned();
             $table->foreign('t_tramite_id')->references('id')->on('tipo_tramites');
-            $table->enum('medio_agenda', ['web', 'telefono']);
-            $table->enum('estado', ['agendada', 'atendida']);
+            $table->enum('medio_agenda', ['Web', 'Telefono']);
+            $table->boolean('Atendida')->default(0);
             $table->timestamps();
         });
     }
 
     /**
      * Reverse the migrations.
-     *
-     * @return void
      */
     public function down()
     {
