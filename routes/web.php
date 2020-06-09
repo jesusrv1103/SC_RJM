@@ -11,8 +11,18 @@
 |
 */
 
-
-
 Route::get('/', 'Agenda\CitaController@create')->name('cita.create');
 
 Route::post('/', 'Agenda\CitaController@store')->name('cita.store');
+
+Route::get('descargar/{acuse}', 'Agenda\CitaController@descargarAcuse')->name('acuse.cita');
+
+Route::get('citas/dia', 'Agenda\CitaController@index')->name('citasdeldia');
+
+Route::get('citas/general', 'Agenda\CitaController@listadoGeneralCitas')->name('listadogeneral');
+
+Route::get('detalles/cita/{id}', 'Agenda\CitaController@detalleCita')->name('agenda.detalle.cita');
+
+Route::get('registrar/cita/telefono', 'Agenda\CitaController@registrarCitaTelefono')->name('registrar.cita.telefono');
+
+Route::post('/cita/telefono', 'Agenda\CitaController@store_telefono')->name('cita.store.telefono');

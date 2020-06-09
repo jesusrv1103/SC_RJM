@@ -38,6 +38,7 @@ License: You must have a valid license purchased only from themeforest(the above
                 sessionStorage.fonts = true;
             }
         });
+
     </script>
 
     <!--end::Fonts -->
@@ -240,7 +241,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                             </div>
 
                                             <div class="form-group row">
-                                                <label for="example-text-input" class="col-2 col-form-label">Nonbre completo: </label>
+                                                <label for="example-text-input" class="col-2 col-form-label">Nonbre completo:<span style="color:red;">*</span> </label>
                                                 <div class="col-10">
 
                                                     <input type="text" class="form-control" onchange="mayus(this);" name="nombre_persona">
@@ -256,15 +257,21 @@ License: You must have a valid license purchased only from themeforest(the above
                                             <div class="form-group row">
                                                 <label for="example-date-input" class="col-2 col-form-label">Fecha de nacimiento: <span style="color:red;">*</span></label>
                                                 <div class="col-10">
-                                                    <input class="form-control" name="fecha_nacimiento" type="date" value="{{now()}}" id="example-date-input" required>
+                                                    <input class="form-control" name="fecha_nacimiento" type="date"   value="" id="example-date-input" required>
                                                 </div>
                                             </div>
 
+                                            
+                                           
+
+
+                                           
 
                                             <div class="form-group row">
                                                 <label class="col-2 col-form-label">Tipo de tramite: <span style="color:red;">*</span></label>
                                                 <div class="col-10">
-                                                    <select class="form-control kt-select2" id="kt-select-distrito" style="width: 100%" name="tipo_tramite" required>
+                                                    <select class="form-control kt-select2" id="kt-select-tipo-tramite" style="width: 100%" name="tipo_tramite" required>
+                                                       <option ></option>
                                                         @foreach ($tipo_tramites as $tramite)
                                                         <option value="{{$tramite->id}}">
                                                             {{$tramite->nombre}}</option>
@@ -276,12 +283,12 @@ License: You must have a valid license purchased only from themeforest(the above
                                             </div>
 
 
-
+                                         
 
                                             <div class="form-group row">
                                                 <label for="example-date-input" class="col-2 col-form-label">Fecha para cita: <span style="color:red;">*</span></label>
                                                 <div class="col-10">
-                                                    <input class="form-control" name="fecha_cita" type="date" value="{{now()}}" id="fecha_cita" required>
+                                                    <input class="form-control" name="fecha_cita" type="date" min="{{ date('Y-m-d', strtotime(now())) }}" max="  {{ date('Y-m-d', strtotime(now()."+ 20 days")) }}" id="fecha_cita" required>
                                                 </div>
                                             </div>
 
@@ -548,29 +555,32 @@ License: You must have a valid license purchased only from themeforest(the above
         }
     }
 
-    function verificarDisponibilidad() {
-        var fecha = document.getElementById("fecha_cita").value;
-        if (fecha == "") {
-            alert("fecha  vacia");
-
-        } else {
-            alert(fecha);
-        }
-    }
-
-
+ 
+    
 
     $(function() {
         $('#fecha_cita').on('change', onSelectFechaCambio);
 
     });
 
+    $('#kt-select-tipo-tramite, #kt_select2_3_validate').select2({
+            placeholder: "Seleccione tipo  de tramite.",
+        });
+
     function onSelectFechaCambio() {
         var fecha = $(this).val();
-        //alert(fecha);
+            fechaf= new Date(fecha);
+        
+        
+        if(fechaf.getDay()==6  || fechaf.getDay() ==5 ){
+          alert("¡Lo sentimos el  tramite para el  Registro  de Mandamientos  Judiciales solo es de Lunes a Viernes.!")
+          var html_select = '<option></option>';
+          html_select += '<option value="">No existen horarios  disponibles para esta fecha</option>'
+                $('#kt-select-horario').html(html_select);
+          
+        } else {
 
-
-        $.get('/api/horasdisponibles/' + fecha, function(data) {
+            $.get('/api/horasdisponibles/' + fecha, function(data) {
             var html_select = '<option></option>';
             for (let index = 0; index < data.length; index++) {
 
@@ -580,6 +590,12 @@ License: You must have a valid license purchased only from themeforest(the above
             }
         });
 
+
+        }
+        //alert(fecha);
+
+
+      
 
         $('#kt-select-horario, #kt_select2_3_validate').select2({
             placeholder: "Seleccione alguno de los horarios disponibles.",
