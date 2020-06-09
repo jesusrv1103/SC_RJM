@@ -282,13 +282,17 @@ License: You must have a valid license purchased only from themeforest(the above
                                                 </div>
                                             </div>
 
+                                            @php
 
+                                              $fecha_max= date('Y-m-d', strtotime(now()."+ 3 days"));
+                                             echo  $fecha_max;
+                                            @endphp
                                          
 
                                             <div class="form-group row">
                                                 <label for="example-date-input" class="col-2 col-form-label">Fecha para cita: <span style="color:red;">*</span></label>
                                                 <div class="col-10">
-                                                    <input class="form-control" name="fecha_cita" type="date" min="{{ date('Y-m-d', strtotime(now())) }}" max="  {{ date('Y-m-d', strtotime(now()."+ 20 days")) }}" id="fecha_cita" required>
+                                                    <input class="form-control" name="fecha_cita" type="date" min="{{ date('Y-m-d', strtotime(now())) }}" max="{{$fecha_max}}" id="fecha_cita" required>
                                                 </div>
                                             </div>
 
