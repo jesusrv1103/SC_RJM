@@ -76,7 +76,7 @@ class CitaController extends Controller
         $cita = Cita::find($id);
         $pdf = PDF::setOptions(['isHtml5ParserEnabled' => true, 'isRemoteEnabled' => true])
         ->loadView('agenda.ficha_cita', ['cita' => $cita])
-        ->setPaper('legal', 'portrait');
+        ->setPaper('A4', 'portrait');
 
         return $pdf->download('Folio: '.$cita->folio.'.pdf');
     }

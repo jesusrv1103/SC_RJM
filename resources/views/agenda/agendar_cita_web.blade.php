@@ -300,7 +300,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                             <div class="form-group row">
                                                 <label class="col-2 col-form-label">Horarios disponibles: <span style="color:red;">*</span></label>
                                                 <div class="col-10">
-                                                    <select class="form-control  kt-select2" onchange="verificarDisponibilidad();" id="kt-select-horario" style="width: 100%" name="hora_cita" required>
+                                                    <select class="form-control  kt-select2"  id="kt-select-horario" style="width: 100%" name="hora_cita" required>
 
 
                                                     </select>
@@ -561,6 +561,9 @@ License: You must have a valid license purchased only from themeforest(the above
 
  
     
+    $('#kt-select-horario, #kt_select2_3_validate').select2({
+            placeholder: "Seleccione alguno de los horarios disponibles.",
+        });
 
     $(function() {
         $('#fecha_cita').on('change', onSelectFechaCambio);
@@ -583,11 +586,12 @@ License: You must have a valid license purchased only from themeforest(the above
                 $('#kt-select-horario').html(html_select);
           
         } else {
-
+           
             $.get('/api/horasdisponibles/' + fecha, function(data) {
             var html_select = '<option></option>';
+         
             for (let index = 0; index < data.length; index++) {
-
+                console.log(data[index].id);
                 html_select += '<option value="' + data[index].id + '">' + data[index].hora + '</option>'
                 $('#kt-select-horario').html(html_select);
 
@@ -601,9 +605,6 @@ License: You must have a valid license purchased only from themeforest(the above
 
       
 
-        $('#kt-select-horario, #kt_select2_3_validate').select2({
-            placeholder: "Seleccione alguno de los horarios disponibles.",
-        });
 
 
     }

@@ -58,21 +58,30 @@ License: You must have a valid license purchased only from themeforest(the above
 
     <!--begin:: Global Optional Vendors -->
     <link href="/assets/vendors/general/tether/dist/css/tether.css" rel="stylesheet" type="text/css" />
-    <link href="/assets/vendors/general/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css" rel="stylesheet" type="text/css" />
-    <link href="/assets/vendors/general/bootstrap-datetime-picker/css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css" />
-    <link href="/assets/vendors/general/bootstrap-timepicker/css/bootstrap-timepicker.css" rel="stylesheet" type="text/css" />
-    <link href="/assets/vendors/general/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" type="text/css" />
-    <link href="/assets/vendors/general/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.css" rel="stylesheet" type="text/css" />
-    <link href="/assets/vendors/general/bootstrap-select/dist/css/bootstrap-select.css" rel="stylesheet" type="text/css" />
-    <link href="/assets/vendors/general/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/vendors/general/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css" rel="stylesheet"
+        type="text/css" />
+    <link href="/assets/vendors/general/bootstrap-datetime-picker/css/bootstrap-datetimepicker.css" rel="stylesheet"
+        type="text/css" />
+    <link href="/assets/vendors/general/bootstrap-timepicker/css/bootstrap-timepicker.css" rel="stylesheet"
+        type="text/css" />
+    <link href="/assets/vendors/general/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet"
+        type="text/css" />
+    <link href="/assets/vendors/general/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.css" rel="stylesheet"
+        type="text/css" />
+    <link href="/assets/vendors/general/bootstrap-select/dist/css/bootstrap-select.css" rel="stylesheet"
+        type="text/css" />
+    <link href="/assets/vendors/general/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.css" rel="stylesheet"
+        type="text/css" />
     <link href="/assets/vendors/general/select2/dist/css/select2.css" rel="stylesheet" type="text/css" />
     <link href="/assets/vendors/general/ion-rangeslider/css/ion.rangeSlider.css" rel="stylesheet" type="text/css" />
     <link href="/assets/vendors/general/nouislider/distribute/nouislider.css" rel="stylesheet" type="text/css" />
     <link href="/assets/vendors/general/owl.carousel/dist/assets/owl.carousel.css" rel="stylesheet" type="text/css" />
-    <link href="/assets/vendors/general/owl.carousel/dist/assets/owl.theme.default.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/vendors/general/owl.carousel/dist/assets/owl.theme.default.css" rel="stylesheet"
+        type="text/css" />
     <link href="/assets/vendors/general/dropzone/dist/dropzone.css" rel="stylesheet" type="text/css" />
     <link href="/assets/vendors/general/summernote/dist/summernote.css" rel="stylesheet" type="text/css" />
-    <link href="/assets/vendors/general/bootstrap-markdown/css/bootstrap-markdown.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/vendors/general/bootstrap-markdown/css/bootstrap-markdown.min.css" rel="stylesheet"
+        type="text/css" />
     <link href="/assets/vendors/general/animate.css/animate.css" rel="stylesheet" type="text/css" />
     <link href="/assets/vendors/general/toastr/build/toastr.css" rel="stylesheet" type="text/css" />
     <link href="/assets/vendors/general/morris.js/morris.css" rel="stylesheet" type="text/css" />
@@ -81,7 +90,8 @@ License: You must have a valid license purchased only from themeforest(the above
     <link href="/assets/vendors/custom/vendors/line-awesome/css/line-awesome.css" rel="stylesheet" type="text/css" />
     <link href="/assets/vendors/custom/vendors/flaticon/flaticon.css" rel="stylesheet" type="text/css" />
     <link href="/assets/vendors/custom/vendors/flaticon2/flaticon.css" rel="stylesheet" type="text/css" />
-    <link href="/assets/vendors/general/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/vendors/general/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet"
+        type="text/css" />
 
     <!--end:: Global Optional Vendors -->
 
@@ -100,7 +110,8 @@ License: You must have a valid license purchased only from themeforest(the above
 
 <!-- begin::Body -->
 
-<body class="kt-page--loading-enabled kt-page--loading kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header--minimize-topbar kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-page--loading">
+<body
+    class="kt-page--loading-enabled kt-page--loading kt-quick-panel--right kt-demo-panel--right kt-offcanvas-panel--right kt-header--fixed kt-header--minimize-topbar kt-header-mobile--fixed kt-subheader--enabled kt-subheader--transparent kt-page--loading">
 
     <!-- begin::Page loader -->
 
@@ -109,7 +120,8 @@ License: You must have a valid license purchased only from themeforest(the above
     <!-- begin:: Page -->
 
     <!-- begin:: Header Mobile -->
-    <div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed" style="background-color:#212750 !important;">
+    <div id="kt_header_mobile" class="kt-header-mobile  kt-header-mobile--fixed"
+        style="background-color:#212750 !important;">
         <div class="kt-header-mobile__logo">
             <a href="demo2/index.html">
                 <img alt="Logo" src="/assets/logos_fiscalia/gris_blanco140.png" />
@@ -117,7 +129,8 @@ License: You must have a valid license purchased only from themeforest(the above
         </div>
         <div class="kt-header-mobile__toolbar" style="background-color:#212750 !important;">
             <button class="kt-header-mobile__toolbar-toggler" id="kt_header_mobile_toggler"><span></span></button>
-            <button class="kt-header-mobile__toolbar-topbar-toggler" id="kt_header_mobile_topbar_toggler"><i class="flaticon-more-1"></i></button>
+            <button class="kt-header-mobile__toolbar-topbar-toggler" id="kt_header_mobile_topbar_toggler"><i
+                    class="flaticon-more-1"></i></button>
         </div>
     </div>
 
@@ -127,7 +140,8 @@ License: You must have a valid license purchased only from themeforest(the above
             <div class="kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-wrapper" id="kt_wrapper">
 
                 <!-- begin:: Header -->
-                <div id="kt_header" class="kt-header kt-grid__item  kt-header--fixed " data-ktheader-minimize="on" style="background-color:#212750 !important;">
+                <div id="kt_header" class="kt-header kt-grid__item  kt-header--fixed " data-ktheader-minimize="on"
+                    style="background-color:#212750 !important;">
                     <div class="kt-header__top">
                         <div class="kt-container ">
 
@@ -135,8 +149,10 @@ License: You must have a valid license purchased only from themeforest(the above
                             <div class="kt-header__brand   kt-grid__item" id="kt_header_brand">
                                 <div class="kt-header__brand-logo">
                                     <a href="demo2/index.html">
-                                        <img alt="Logo" src="/assets/logos_fiscalia/gris_blanco140.png" class="kt-header__brand-logo-default" />
-                                        <img alt="Logo" src="/assets/logos_fiscalia/gris_blanco140.png" class="kt-header__brand-logo-sticky" />
+                                        <img alt="Logo" src="/assets/logos_fiscalia/gris_blanco140.png"
+                                            class="kt-header__brand-logo-default" />
+                                        <img alt="Logo" src="/assets/logos_fiscalia/gris_blanco140.png"
+                                            class="kt-header__brand-logo-sticky" />
                                     </a>
                                 </div>
                                 <div class="kt-header__brand-nav">
@@ -178,7 +194,8 @@ License: You must have a valid license purchased only from themeforest(the above
                 </div>
 
                 <!-- end:: Header -->
-                <div class="kt-body kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-grid--stretch" id="kt_body">
+                <div class="kt-body kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor kt-grid--stretch"
+                    id="kt_body">
                     <div class="kt-content  kt-grid__item kt-grid__item--fluid kt-grid kt-grid--hor" id="kt_content">
                         <!-- begin:: Content Head -->
                         <div class="kt-subheader   kt-grid__item" id="kt_subheader">
@@ -217,108 +234,211 @@ License: You must have a valid license purchased only from themeforest(the above
                                             <h3 class="kt-portlet__head-title">
                                                 Cita se ha registrado con éxito
                                             </h3>
+
+                                          
+                                        </div>
+                                        <div class="kt-portlet__head-label" >
+                                        <a class="btn btn-success" href="{{ route('acuse.cita',$datos_cita->id) }}">
+                                                Descargar Acuse
+                                            </a>
                                         </div>
                                     </div>
 
-                               
-                                
+
+
 
                                     <!--begin::Form-->
-                                        <div class="kt-portlet__body">
-                                            <div class="form-group form-group-last">
-                                                <div class="alert alert-secondary" role="alert">
-                                                    <div class="alert-icon"><i class="flaticon-avatar kt-font-brand"></i></div>
-                                                    <div class="alert-text">
-                                                        <h2>Datos de cita</h2>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    <div class="kt-portlet__body">
+                                        <div class="kt-widget14__header ">
+                                            <h3 class="kt-widget14__title">
+                                                <span><strong>Folio de cita: </strong> {{$datos_cita->folio}}</span>
+                                            </h3>
+                                        </div>
+                                        <br>
 
-                                           <div class="kt-widget__item">
-                                            <div class="kt-widget__contact">
-                                                <span class="kt-widget__label">Folio:</span>
-                                                <span class="kt-widget__data"><strong>{{ $datos_cita->folio }}</strong></span>
-                                            </div>
-                                           </div>
-                                           <div class="kt-widget__item">
-                                            <div class="kt-widget__contact">
-                                                <span class="kt-widget__label">Fecha:</span>
-                                                <span class="kt-widget__data"><strong>{{ $datos_cita->fecha }}</strong></span>
-                                            </div>
-                                           </div>
 
-                                           <div class="kt-widget__item">
-                                            <div class="kt-widget__contact">
-                                                <span class="kt-widget__label">Hora:</span>
-                                                <span class="kt-widget__data"><strong>{{ $datos_cita->hora_atencion->hora }}</strong></span>
-                                            </div>
-                                           </div>
-
-                                           <div class="kt-widget__item">
-                                            <div class="kt-widget__contact">
-                                                <span class="kt-widget__label">Tipo  de Tramite:</span>
-                                                <span class="kt-widget__data"><strong>{{ $datos_cita->t_tramite->nombre }}</strong></span>
-                                            </div>
-                                           </div>
-                                           <br><br>
-
-                                           <div class="form-group form-group-last">
-                                            <div class="alert alert-secondary" role="alert">
-                                                <div class="alert-icon"><i class="flaticon-avatar kt-font-brand"></i></div>
-                                                <div class="alert-text">
-                                                    <h2>Datos Generales de la persona que realiza la cita </h2>
-                                                </div>
-                                            </div>
+                                        <div class="kt-widget14__header ">
+                                            <h3 class="kt-widget14__title">
+                                                <i class="flaticon-avatar kt-font-brand"></i> <span>Datos Generales de
+                                                    la persona que realiza la cita</span>
+                                            </h3>
                                         </div>
 
                                         <div class="kt-widget__item">
                                             <div class="kt-widget__contact">
                                                 <span class="kt-widget__label">Nombre:</span>
-                                                <span class="kt-widget__data"><strong>{{ $datos_cita->persona->nombre }}</strong></span>
+                                                <span
+                                                    class="kt-widget__data"><strong>{{ $datos_cita->persona->nombre }}</strong></span>
                                             </div>
-                                           </div>
-                                        
+                                        </div>
 
-                                           <div class="kt-widget__item">
+
+                                        <div class="kt-widget__item">
                                             <div class="kt-widget__contact">
-                                                <span class="kt-widget__label">Fecha  de Nacimiento::</span>
-                                                <span class="kt-widget__data"><strong>{{ $datos_cita->persona->fecha_nacimiento }}</strong></span>
-                                            </div>
-                                           </div>
-                                          
-                                           
-                                        </div>
-
-
-                                        <div class="kt-portlet__foot">
-                                            <div class="kt-form__actions">
-                                                <div class="row ">
-                                                    <div class="col-md-4">
-
-                                                    </div>
-
-                                                    <div class="col-md-4 btn-lg">
-                                                        <a class="btn btn-success" href="{{ route('acuse.cita',$datos_cita->id) }}">
-                                                            Descargar Acuse
-                                                        </a>
-                                                    </div>
-                                                    <div class="col-md-4">
-
-                                                    </div>
-
-                                                </div>
+                                                <span class="kt-widget__label">Fecha de Nacimiento::</span>
+                                                <span
+                                                    class="kt-widget__data"><strong>{{ $datos_cita->persona->fecha_nacimiento->format('d/m/Y') }}</strong></span>
                                             </div>
                                         </div>
 
-                                            <div class="form-group form-group-last">
-                                                <div class="alert alert-secondary" role="alert">
-                                                    <div class="alert-icon"><i class="flaticon-warning-sign kt-font-brand"></i></div>
-                                                    <div class="alert-text">
-                                                        Mensaje
-                                                    </div>
-                                                </div>
+                                        <br><br>
+
+                                        <div class="kt-widget14__header">
+                                            <h3 class="kt-widget14__title">
+                                                <i class="flaticon-avatar kt-font-brand"></i> <span> Datos de
+                                                    cita</span>
+                                            </h3>
+                                        </div>
+
+                                        <div class="kt-widget__item">
+                                            <div class="kt-widget__contact">
+                                                <span class="kt-widget__label">Folio:</span>
+                                                <span
+                                                    class="kt-widget__data"><strong>{{ $datos_cita->folio }}</strong></span>
                                             </div>
-                                   
+                                        </div>
+                                        <div class="kt-widget__item">
+                                            <div class="kt-widget__contact">
+                                                <span class="kt-widget__label">Fecha:</span>
+                                                <span
+                                                    class="kt-widget__data"><strong>{{ $datos_cita->fecha->format('d/m/Y') }}</strong></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="kt-widget__item">
+                                            <div class="kt-widget__contact">
+                                                <span class="kt-widget__label">Hora:</span>
+                                                <span
+                                                    class="kt-widget__data"><strong>{{ $datos_cita->hora_atencion->hora }}</strong></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="kt-widget__item">
+                                            <div class="kt-widget__contact">
+                                                <span class="kt-widget__label">Tipo de Tramite:</span>
+                                                <span
+                                                    class="kt-widget__data"><strong>{{$datos_cita->t_tramite->nombre}}</strong></span>
+                                            </div>
+                                        </div>
+                                        <br><br>
+
+                                        <div class="kt-widget14__header">
+                                            <h3 class="kt-widget14__title">
+                                                <i class="flaticon-avatar kt-font-brand"></i> <span>Requisitos</span>
+                                            </h3>
+                                        </div>
+                                        @if($datos_cita->t_tramite->id ==1)
+                                        <div class="kt-widget__item">
+                                            <div class="kt-widget__contact">
+                                                <span class="kt-widget__label">-Acta de nacimiento(original)</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="kt-widget__item">
+                                            <div class="kt-widget__contact">
+                                                <span class="kt-widget__label">-Credencial de elector</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="kt-widget__item">
+                                            <div class="kt-widget__contact">
+                                                <span class="kt-widget__label">-CURP nuevo formato</span>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="kt-widget__item">
+                                            <div class="kt-widget__contact">
+                                                <span class="kt-widget__label">-Comprobante de domicilio</span>
+
+                                            </div>
+                                        </div>
+
+                                      
+                                        @else
+                                        <div class="kt-widget__item">
+                                            <div class="kt-widget__contact">
+                                                <span class="kt-widget__label">-Acta de nacimiento(original)</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="kt-widget__item">
+                                            <div class="kt-widget__contact">
+                                                <span class="kt-widget__label">-Matricula consular o pasaporte
+                                                    vigente</span>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="kt-widget__item">
+                                            <div class="kt-widget__contact">
+                                                <span class="kt-widget__label">-CURP nuevo formato</span>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="kt-widget__item">
+                                            <div class="kt-widget__contact">
+                                                <span class="kt-widget__label">-Comprobante de domicilio en el
+                                                    extranjero(copia)</span>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="kt-widget__item">
+                                            <div class="kt-widget__contact">
+                                                <span class="kt-widget__label">-1 fotografia tamaño infantil en blanco y
+                                                    negro</span>
+
+                                            </div>
+                                        </div>
+                                        <div class="kt-widget__item">
+                                            <div class="kt-widget__contact">
+                                                <span class="kt-widget__label">-Del familiar que va realizar el
+                                                    trámite</span>
+                                                <br>&nbsp;&nbsp;&nbsp;-Credencial de elector
+                                                <br>&nbsp;&nbsp;&nbsp;-Comprobante de domicilio(copia)
+
+                                            </div>
+                                        </div>
+                                        @endif
+                                        <div class="kt-widget__item">
+                                            <div class="kt-widget__contact">
+                                                <span class="kt-widget__label">-Cubrir el pago de $174.00(en nuestras
+                                                    instalaciones).</span>
+
+                                            </div>
+                                        </div>
+
+
+
+
+
+                                    </div>
+
+
+
+                                    <div class="form-group form-group-last">
+                                        <div class="alert alert-secondary" role="alert">
+                                            <div class="alert-icon"><i class="flaticon-warning-sign kt-font-brand"></i>
+                                            </div>
+                                            <div class="alert-text">
+                                                Le rogamos puntualidad para acudir a su cita, de no ser así Serra
+                                                necesario agendar una nueva cita.
+                                            </div>
+                                        </div>
+                                        <div class="alert alert-secondary" role="alert">
+                                            <div class="alert-icon"><i class="flaticon-warning-sign kt-font-brand"></i>
+                                            </div>
+                                            <div class="alert-text">
+                                                *Si no. cubre la totalidad. de los requisitos para su tramite, no se
+                                                brindara el servicio y será necesario agendar nueva cita.
+                                                <br>
+                                                *Deberá presentar su ficha de comprobación de cita.
+                                            </div>
+                                        </div>
+                                    </div>
+
 
                                     <!--end::Form-->
                                 </div>
@@ -339,7 +459,8 @@ License: You must have a valid license purchased only from themeforest(the above
                 </div>
 
                 <!-- begin:: Footer -->
-                <div class="kt-footer  kt-footer--extended  kt-grid__item" id="kt_footer" style="background-color:#212750 !important;">
+                <div class="kt-footer  kt-footer--extended  kt-grid__item" id="kt_footer"
+                    style="background-color:#212750 !important;">
 
                     <div class="kt-footer__bottom" style="background-color:#212750 !important;">
                         <div class="kt-container ">
@@ -350,11 +471,13 @@ License: You must have a valid license purchased only from themeforest(the above
                                     </a>
                                     <div class="kt-footer__copyright">
 
-                                        <a href="https://www.fiscaliazacatecas.gob.mx" target="_blank" style="color:white;">FGJEZ</a>
+                                        <a href="https://www.fiscaliazacatecas.gob.mx" target="_blank"
+                                            style="color:white;">FGJEZ</a>
                                     </div>
                                 </div>
                                 <div class="kt-footer__menu">
-                                    <a href="https://www.fiscaliazacatecas.gob.mx" style="color:white;" target="_blank">https://www.fiscaliazacatecas.gob.mx</a>
+                                    <a href="https://www.fiscaliazacatecas.gob.mx" style="color:white;"
+                                        target="_blank">https://www.fiscaliazacatecas.gob.mx</a>
                                 </div>
                             </div>
                         </div>
@@ -416,9 +539,11 @@ License: You must have a valid license purchased only from themeforest(the above
 
     <script src="/assets/vendors/general/jquery-form/dist/jquery.form.min.js" type="text/javascript"></script>
     <script src="/assets/vendors/general/block-ui/jquery.blockUI.js" type="text/javascript"></script>
-    <script src="/assets/vendors/general/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+    <script src="/assets/vendors/general/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"
+        type="text/javascript"></script>
     <script src="/assets/vendors/custom/js/vendors/bootstrap-datepicker.init.js" type="text/javascript"></script>
-    <script src="/assets/vendors/general/bootstrap-datetime-picker/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+    <script src="/assets/vendors/general/bootstrap-datetime-picker/js/bootstrap-datetimepicker.min.js"
+        type="text/javascript"></script>
     <script src="/assets/vendors/general/bootstrap-timepicker/js/bootstrap-timepicker.min.js" type="text/javascript">
     </script>
     <script src="/assets/vendors/custom/js/vendors/bootstrap-timepicker.init.js" type="text/javascript"></script>
@@ -428,7 +553,8 @@ License: You must have a valid license purchased only from themeforest(the above
     <script src="/assets/vendors/general/boo;
     tstrap-maxlength/src/bootstrap-maxlength.js" type="text/javascript">
     </script>
-    <script src="/assets/vendors/custom/vendors/bootstrap-multiselectsplitter/bootstrap-multiselectsplitter.min.js" type="text/javascript"></script>
+    <script src="/assets/vendors/custom/vendors/bootstrap-multiselectsplitter/bootstrap-multiselectsplitter.min.js"
+        type="text/javascript"></script>
     <script src="/assets/vendors/general/bootstrap-select/dist/js/bootstrap-select.js" type="text/javascript"></script>
     <script src="/assets/vendors/general/bootstrap-switch/dist/js/bootstrap-switch.js" type="text/javascript"></script>
     <script src="/assets/vendors/custom/js/vendors/bootstrap-switch.init.js" type="text/javascript"></script>
@@ -439,7 +565,8 @@ License: You must have a valid license purchased only from themeforest(the above
     <script src="/assets/vendors/general/inputmask/dist/jquery.inputmask.bundle.js" type="text/javascript"></script>
     <script src="/assets/vendors/general/inputmask/dist/inputmask/inputmask.date.extensions.js" type="text/javascript">
     </script>
-    <script src="/assets/vendors/general/inputmask/dist/inputmask/inputmask.numeric.extensions.js" type="text/javascript"></script>
+    <script src="/assets/vendors/general/inputmask/dist/inputmask/inputmask.numeric.extensions.js"
+        type="text/javascript"></script>
     <script src="/assets/vendors/general/nouislider/distribute/nouislider.js" type="text/javascript"></script>
     <script src="/assets/vendors/general/owl.carousel/dist/owl.carousel.js" type="text/javascript"></script>
     <script src="/assets/vendors/general/autosize/dist/autosize.js" type="text/javascript"></script>
@@ -458,7 +585,8 @@ License: You must have a valid license purchased only from themeforest(the above
     <script src="/assets/vendors/general/raphael/raphael.js" type="text/javascript"></script>
     <script src="/assets/vendors/general/morris.js/morris.js" type="text/javascript"></script>
     <script src="/assets/vendors/general/chart.js/dist/Chart.bundle.js" type="text/javascript"></script>
-    <script src="/assets/vendors/custom/vendors/bootstrap-session-timeout/dist/bootstrap-session-timeout.min.js" type="text/javascript"></script>
+    <script src="/assets/vendors/custom/vendors/bootstrap-session-timeout/dist/bootstrap-session-timeout.min.js"
+        type="text/javascript"></script>
     <script src="/assets/vendors/custom/vendors/jquery-idletimer/idle-timer.min.js" type="text/javascript"></script>
     <script src="/assets/vendors/general/waypoints/lib/jquery.waypoints.js" type="text/javascript"></script>
     <script src="/assets/vendors/general/counterup/jquery.counterup.js" type="text/javascript"></script>

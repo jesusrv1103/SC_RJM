@@ -15,10 +15,7 @@ class HoraDeAtencionController extends Controller
     public function horasAtencionDisponibles($fecha)
     {
        
-        /*
-        $horas_ocupadas = Cita::select('hora_atencion_id')
-            ->where('fecha', '=', $fecha)
-            ->get(); */
+      
             $horas_completas =array();
 
             $horas_ocupadas = DB::table('citas')
@@ -29,17 +26,19 @@ class HoraDeAtencionController extends Controller
             foreach($horas_ocupadas as $hora)
             {
                 
-                    if($hora->count_hora_id <2){
+                    if($hora->count_hora_id ==2){
                  
               
-                    dd(array_push ( $horas_completas , $hora->hora_atencion_id));
+                   array_push ( $horas_completas , $hora->hora_atencion_id);
                 }
     
-           return $horarios = DB::table('horas_de_atencion')
-               ->whereNotIn('id', $horas_ocupadas)
-            ->get();
+         
+              // ->whereNotIn('id', $horas_completas)
+            
 
             }
+
+    return $horarios=HoraDeAtencion::whereNotIn('id', $horas_completas)->get();
         
     }
 }

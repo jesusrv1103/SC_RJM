@@ -9,22 +9,21 @@
 </head>
 
 <body>
-    <table>
-        <th>
-        <td>Fiscalía General de Justicia del Estado de Zacatecas</td>
-        <th>
-    </table>
-    <div style="text-align: right;">
-        <h3>Cita con el folio: {{$cita->folio}}</h3>
+
+    <div style="text-align: center;">
+
         <br>
         <img src="{{ public_path('assets/logos_fiscalia/original180x90.png')}}" width="200px">
     </div>
 
+    <center>
+        <h3>CITA PARA TRAMITAR REGISTRO DE MANDAMIENTOS JUDICIALES</h3>
+        <p>(antes CARTA DE ATENCEDENTES NO PENALES)</p>
+    </center>
     <div>
-        <h2>Cita Para Tramitar el Registro de Mandamientos Judiciales</h2>
         <table>
             <tr>
-                 <th colspan="2">Datos Generales de la persona que realiza la cita</th>
+                <th colspan="2">Datos Generales de la persona que realiza la cita</th>
 
             </tr>
             <tr>
@@ -33,13 +32,13 @@
             </tr>
             <tr>
                 <td>Fecha de Nacimiento: </td>
-                <td>{{$cita->persona->fecha_nacimiento}}</td>
+                <td>{{$cita->persona->fecha_nacimiento->format('d/m/Y')}}</td>
             </tr>
         </table>
 
         <table>
             <tr>
-            <th colspan="2">Datos de la cita</th>
+                <th style="text-align: left;" colspan="2">Datos de la cita</th>
 
             </tr>
 
@@ -50,7 +49,7 @@
 
             <tr>
                 <td>Fecha: </td>
-                <td>{{$cita->fecha}}</td>
+                <td>{{$cita->fecha->format('d/m/Y')}}</td>
             </tr>
 
             <tr>
@@ -60,10 +59,91 @@
 
 
             <tr>
-                <td>Tipo  de tramite: </td>
+                <td>Tipo de tramite: </td>
                 <td>{{$cita->t_tramite->nombre}}</td>
             </tr>
         </table>
+
+        <table>
+            <tr>
+                <th style="text-align: left;">Requisitos</th>
+
+            </tr>
+            @if($cita->t_tramite->id ==1)
+            <tr>
+                <td>-Acta de nacimiento(original)</td>
+
+            </tr>
+            <tr>
+                <td>-Credencial de elector</td>
+
+            </tr>
+            <tr>
+                <td>-CURP nuevo formato</td>
+
+            </tr>
+            <tr>
+                <td>-Comprobante de domicilio</td>
+
+            </tr>
+            @else
+            <tr>
+                <td>-Acta de nacimiento(original)</td>
+
+            </tr>
+
+            <tr>
+                <td>-Matricula consular o pasaporte
+                    vigente</td>
+
+            </tr>
+
+            <tr>
+                <td>-CURP nuevo formato</td>
+
+            </tr>
+            <tr>
+                <td>-Comprobante de domicilio en el
+                    extranjero(copia)</td>
+
+            </tr>
+
+            <tr>
+                <td>-1 fotografia tamaño infantil en blanco y
+                    negro</td>
+
+            </tr>
+
+            <tr>
+                <td>-Del familiar que va realizar el
+                        trámite</td>
+
+            </tr>
+            <tr>
+                    <td>&nbsp;&nbsp;&nbsp;-Credencial de elector</td>
+    
+                </tr>
+                <tr>
+                        <td>&nbsp;&nbsp;&nbsp;-Comprobante de domicilio(copia)</td>
+        
+                    </tr>
+
+
+
+
+
+
+            @endif
+            <tr>
+                <td>-Cubrir el pago de $174.00(en nuestras
+                    instalaciones).</td>
+
+            </tr>
+
+
+
+        </table>
+
 
     </div>
 </body>

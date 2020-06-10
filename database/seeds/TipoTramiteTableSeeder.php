@@ -18,7 +18,7 @@ class TipoTramiteTableSeeder extends Seeder
         ]);
 
         TipoTramite::create([
-            'nombre' => 'Personal  Extrangero'
+            'nombre' => 'Persona en el Extranjero'
         ]);
     }
 }
