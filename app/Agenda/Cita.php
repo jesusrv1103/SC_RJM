@@ -10,6 +10,8 @@ class Cita extends Model
 {
     protected $table = 'citas';
 
+    protected $dates = ['fecha'];
+
     public function cita($id)
     {
         return  Cita::find($id);

@@ -47,7 +47,7 @@
                     <label for="example-text-input" class="col-2 col-form-label">Nombre completo:<span style="color:red;">*</span></label>
                     <div class="col-8">
                         <input class="form-control" placeholder="IVAN GALVEZ GARCIA"  type="text" onchange="mayus(this);" name="nombre_persona"
-                            id="example-text-input">
+                            id="example-text-input"  required>
                         <span class="form-text text-muted">
                             Por favor ingrese su nombre completo ( ejemplo: JUAN LÓPEZ GARCÍA).
                         </span>
@@ -83,11 +83,10 @@
 
              
 
-
                 <div class="form-group row">
                     <label for="example-number-input" class="col-2 col-form-label">Fecha para cita:<span style="color:red;">*</span></label>
                     <div class="col-8">
-                        <input class="form-control" value="" name="fecha_cita" type="date" min="{{ date('Y-m-d', strtotime(now())) }}" max="{{ date('Y-m-d', strtotime(now()."+ 20 days")) }}" id="fecha_cita" required>
+                        <input class="form-control" value="" name="fecha_cita" type="date" min="{{ date('Y-m-d', strtotime(now())) }}" max="{{ date('Y-m-d', strtotime(now()."+ 2 days")) }}" id="fecha_cita" required>
                     </div>
                 </div>
 
