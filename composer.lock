@@ -3623,9 +3623,7 @@
                 "env",
                 "environment"
             ],
-<<<<<<< HEAD
-            "time": "2020-06-02T14:08:54+00:00"
-=======
+
             "funding": [
                 {
                     "url": "https://github.com/GrahamCampbell",
@@ -3637,7 +3635,7 @@
                 }
             ],
             "time": "2020-05-23T09:42:03+00:00"
->>>>>>> 15d2369da4536077d78f8b842b0313abf7dcd90f
+
         }
     ],
     "packages-dev": [
