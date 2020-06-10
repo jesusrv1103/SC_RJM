@@ -17,20 +17,22 @@ Route::post('/', 'Agenda\CitaController@store')->name('cita.store');
 
 Route::get('descargar/{acuse}', 'Agenda\CitaController@descargarAcuse')->name('acuse.cita');
 
-Route::get('citas/dia', 'Agenda\CitaController@index')->name('citasdeldia');
-
-Route::get('citas/general', 'Agenda\CitaController@listadoGeneralCitas')->name('listadogeneral');
-
 Route::get('detalles/cita/{id}', 'Agenda\CitaController@detalleCita')->name('agenda.detalle.cita');
 
-Route::get('registrar/cita/telefono', 'Agenda\CitaController@registrarCitaTelefono')->name('registrar.cita.telefono');
+Route::get('citas/dia', 'Agenda\CitaController@index')->name('citasdeldia')->middleware('auth');;
 
-Route::post('/cita/telefono', 'Agenda\CitaController@store_telefono')->name('cita.store.telefono');
+Route::get('citas/general', 'Agenda\CitaController@listadoGeneralCitas')->name('listadogeneral')->middleware('auth');;
+
+
+
+Route::get('registrar/cita/telefono', 'Agenda\CitaController@registrarCitaTelefono')->name('registrar.cita.telefono')->middleware('auth');;
+
+Route::post('/cita/telefono', 'Agenda\CitaController@store_telefono')->name('cita.store.telefono')->middleware('auth');;
 
 Auth::routes();
 
-Route::get('/home',  'Agenda\CitaController@listadoGeneralCitas')->name('listadogeneral');
+Route::get('/home',  'Agenda\CitaController@listadoGeneralCitas')->name('listadogeneral')->middleware('auth');;
 
-Auth::routes();
+
 
 

@@ -122,13 +122,24 @@
                         <td>{{ $cita->t_tramite->nombre }}</td>
                         <td>{{ $cita->medio_agenda }}</td>
                         <td>
-                            <center>
+                        @if(auth()->user()->id ==1 || auth()->user()->id ==2)
+                        <center>
+                            @if ( $cita->Atendida==1)
+                                <input type="checkbox" checked  disabled> 
+                            @else 
+                            <input type="checkbox" >
+                            @endif
+                            </center>
+                        @else
+                        <center>
                             @if ( $cita->Atendida==1)
                             <input type="checkbox" checked  disabled> 
                          @else 
-                           <input type="checkbox" >
+                           <input type="checkbox" disabled>
                          @endif
                             </center>
+                        @endif
+                          
                       
                         </td>
                     </tr>

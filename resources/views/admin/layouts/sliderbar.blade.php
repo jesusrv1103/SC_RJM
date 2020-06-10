@@ -12,17 +12,24 @@
                 <i class="kt-menu__section-icon flaticon-more-v2"></i>
             </li>
 
+           
+           
+
+            
+
             <li class="kt-menu__item " aria-haspopup="true"><a href="{{ route('citasdeldia') }}" class="kt-menu__link "><i class="kt-menu__link-icon 
                 flaticon-email"></i><span class="kt-menu__link-text">Citas del dia</span></a></li>
 
+             @if(auth()->user()->id == 1 || auth()->user()->id ==2)
             <li class="kt-menu__item " aria-haspopup="true"><a href="{{ route('listadogeneral') }}" class="kt-menu__link "><i class="kt-menu__link-icon 
                     flaticon-email"></i><span class="kt-menu__link-text">Listado General</span></a></li>
+             @endif
             
-
+             @if(auth()->user()->id ==1 || auth()->user()->id ==2)
             <li class="kt-menu__item " aria-haspopup="true"><a href="{{ route('registrar.cita.telefono') }}" class="kt-menu__link "><i class="kt-menu__link-icon 
                         flaticon-email"></i><span class="kt-menu__link-text">Registrar cita</span></a></li>
 
-
+            @endif
         </ul>
     </div>
 </div>
