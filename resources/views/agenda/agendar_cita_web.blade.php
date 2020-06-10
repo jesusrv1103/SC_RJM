@@ -284,8 +284,8 @@ License: You must have a valid license purchased only from themeforest(the above
 
                                             @php
 
-                                              $fecha_max= date('Y-m-d', strtotime(now()."+ 3 days"));
-                                             echo  $fecha_max;
+                                              $fecha_max= date('Y-m-d', strtotime(now()."+ 2 days"));
+                                            
                                             @endphp
                                          
 
