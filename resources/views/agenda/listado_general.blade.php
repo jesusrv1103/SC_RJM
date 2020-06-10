@@ -4,7 +4,7 @@
     <div class="kt-container  kt-container--fluid ">
         <div class="kt-subheader__main">
             <h3 class="kt-subheader__title">
-                Citas para Tramite  de Registro  de Mandamientos Judiciales
+                Citas para Tramite de Registro de Mandamientos Judiciales
             </h3>
             <span class="kt-subheader__separator kt-hidden"></span>
             <div class="kt-subheader__breadcrumbs">
@@ -31,7 +31,7 @@
                     flaticon2-send"></i>
                 </span>
                 <h3 class="kt-portlet__head-title">
-                 Listado General de   Citas
+                    Listado General de Citas
                 </h3>
             </div>
             <div class="kt-portlet__head-toolbar">
@@ -95,25 +95,25 @@
 
             <!--begin: Datatable -->
             <table class="table table-striped- table-bordered table-hover table-checkable" id="kt-listado-general">
-                
+
                 <thead>
 
                     <tr>
-                       
+
                         <th>Folio</th>
                         <th>Fecha</th>
                         <th>Hora</th>
                         <th>Nombre Persona<br> Citada</th>
                         <th>Fecha Nacimiento<br> Persona Citada</th>
-                        <th>Tipo  de  Tramite </th>
+                        <th>Tipo de Tramite </th>
                         <th>Medio por el<br> que se Agenda </th>
-                        <th>Estado</th>
+                        <th>Atendida</th>
                     </tr>
                 </thead>
                 <tbody>
                     @foreach ($citas as $cita)
                     <tr>
-                        
+
                         <td>{{ $cita->folio }}</td>
                         <td>{{ $cita->fecha }}</td>
                         <td>{{ $cita->hora_atencion->hora }}</td>
@@ -123,13 +123,13 @@
                         <td>{{ $cita->medio_agenda }}</td>
                         <td>
                             <center>
-                            @if ( $cita->Atendida==1)
-                               <input type="checkbox" checked  disabled> Atendida
-                            @else 
-                              <input type="checkbox"  disabled> Sin  Atender
-                            @endif
+                                @if ( $cita->Atendida==1)
+                                <input type="checkbox" checked disabled>
+                                @else
+                                <input type="checkbox">
+                                @endif
                             </center>
-                         
+
                         </td>
                     </tr>
                     @endforeach

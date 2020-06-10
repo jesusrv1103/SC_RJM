@@ -26,3 +26,7 @@ Route::get('detalles/cita/{id}', 'Agenda\CitaController@detalleCita')->name('age
 Route::get('registrar/cita/telefono', 'Agenda\CitaController@registrarCitaTelefono')->name('registrar.cita.telefono');
 
 Route::post('/cita/telefono', 'Agenda\CitaController@store_telefono')->name('cita.store.telefono');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
