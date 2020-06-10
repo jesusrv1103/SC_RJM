@@ -37,6 +37,7 @@ class CitaController extends Controller
         $persona = new Persona();
         $persona->nombre = $request->nombre_persona;
         $persona->fecha_nacimiento = $request->fecha_nacimiento;
+        $persona->telefono = $request->telefono;
         $persona->save();
         $idPersona = $persona->id;
 
@@ -109,6 +110,7 @@ class CitaController extends Controller
         $persona = new Persona();
         $persona->nombre = $request->nombre_persona;
         $persona->fecha_nacimiento = $request->fecha_nacimiento;
+        $persona->telefono = $request->telefono;
         $persona->save();
         $idPersona = $persona->id;
 

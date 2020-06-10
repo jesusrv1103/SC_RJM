@@ -12,10 +12,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-  /*
+  
      
         $this->call(HorarioDeAtencionTableSeeder::class);
         $this->call(TipoTramiteTableSeeder::class);
+        $this->call(UsersTableSeeder::class);
 
            /*
       
@@ -41,6 +42,8 @@ class DatabaseSeeder extends Seeder
 
           */
 
+          /*
+
           $horas_completas =array();
 
             $horas_ocupadas = DB::table('citas')
@@ -58,7 +61,7 @@ class DatabaseSeeder extends Seeder
 
             dd(DB::table('horas_de_atencion')
                ->whereNotIn('id', $horas_completas)
-            ->get());
+            ->get());*/
        
     }
 }

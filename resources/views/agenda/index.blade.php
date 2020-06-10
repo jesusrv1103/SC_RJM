@@ -106,6 +106,7 @@
                         <th>Fecha Nacimiento<br> Persona Citada</th>
                         <th>Tipo  de  Tramite </th>
                         <th>Medio por el<br> que se Agenda </th>
+                        <th>Teléfono</th>
                         <th>Atendida</th>
                     </tr>
                 </thead>
@@ -113,10 +114,11 @@
                     @foreach ($citas as $cita)
                     <tr>
                         <td>{{ $cita->folio }}</td>
-                        <td>{{ $cita->fecha }}</td>
+                        <td>{{ $cita->fecha->format('d/m/Y')  }}</td>
                         <td>{{ $cita->hora_atencion->hora }}</td>
                         <td>{{ $cita->persona->nombre }}</td>
-                        <td>{{ $cita->persona->fecha_nacimiento }}</td>
+                        <td>{{ $cita->persona->fecha_nacimiento->format('d/m/Y')  }}</td>
+                        <td>{{ $cita->persona->telefono }}</td>
                         <td>{{ $cita->t_tramite->nombre }}</td>
                         <td>{{ $cita->medio_agenda }}</td>
                         <td>

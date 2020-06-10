@@ -29,4 +29,8 @@ Route::post('/cita/telefono', 'Agenda\CitaController@store_telefono')->name('cit
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home',  'Agenda\CitaController@listadoGeneralCitas')->name('listadogeneral');
+
+Auth::routes();
+
+

@@ -166,7 +166,7 @@ License: You must have a valid license purchased only from themeforest(the above
                             <center>
 
                                 <h1 style="color:white;">
-                                    Sistema de Citas Para Tramitar el Registro de mandamientos Judiciales </h1>
+                                    Sistema de Citas Para Tramitar el Registro de Mandamientos Judiciales </h1>
                             </center>
 
 
@@ -216,7 +216,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                     <div class="kt-portlet__head">
                                         <div class="kt-portlet__head-label">
                                             <h3 class="kt-portlet__head-title">
-                                                Sistema de Citas Para Tramitar el Registro de mandamientos Judiciales
+                                                Sistema de Citas Para Tramitar el Registro de Mandamientos Judiciales
                                             </h3>
                                         </div>
                                     </div>
@@ -249,9 +249,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                 </div>
                                             </div>
 
-
-
-
+                                          
 
 
                                             <div class="form-group row">
@@ -261,14 +259,26 @@ License: You must have a valid license purchased only from themeforest(the above
                                                 </div>
                                             </div>
 
-                                            
-                                           
+                                            <div class="form-group row">
+                                                <label for="example-text-input" class="col-2 col-form-label">Telefono:<span style="color:red;">*</span> </label>
+                                                <div class="col-10">
+
+                                                <input type="text" class="form-control"
+                                                             id="numeroTelefono_id"
+                                                            name="telefono" onkeypress=" return soloNumeros(event);" required>
+                                                    <span class="form-text text-muted">Por favor ingrese su numero de teléfono..</span>
+                                                </div>
+                                            </div>
 
 
-                                           
+
+
+
+
+
 
                                             <div class="form-group row">
-                                                <label class="col-2 col-form-label">Tipo de tramite: <span style="color:red;">*</span></label>
+                                                <label class="col-2 col-form-label">Tipo de trámite: <span style="color:red;">*</span></label>
                                                 <div class="col-10">
                                                     <select class="form-control kt-select2" id="kt-select-tipo-tramite" style="width: 100%" name="tipo_tramite" required>
                                                        <option ></option>
@@ -284,15 +294,16 @@ License: You must have a valid license purchased only from themeforest(the above
 
                                             @php
 
-                                              $fecha_max= date('Y-m-d', strtotime(now()."+ 2 days"));
-                                            
+                                              $fecha_max= date('Y-m-d', strtotime(now()."+ 3 days"));
+                                              $fecha_min= date('Y-m-d', strtotime(now()."+ 1 days"));
+
                                             @endphp
-                                         
+
 
                                             <div class="form-group row">
                                                 <label for="example-date-input" class="col-2 col-form-label">Fecha para cita: <span style="color:red;">*</span></label>
                                                 <div class="col-10">
-                                                    <input class="form-control" name="fecha_cita" type="date" min="{{ date('Y-m-d', strtotime(now())) }}" max="{{$fecha_max}}" id="fecha_cita" required>
+                                                    <input class="form-control" name="fecha_cita" type="date" min="{{$fecha_min}}" max="{{$fecha_max}}" id="fecha_cita" required>
                                                 </div>
                                             </div>
 
@@ -559,8 +570,8 @@ License: You must have a valid license purchased only from themeforest(the above
         }
     }
 
- 
-    
+
+
     $('#kt-select-horario, #kt_select2_3_validate').select2({
             placeholder: "Seleccione alguno de los horarios disponibles.",
         });
@@ -577,19 +588,19 @@ License: You must have a valid license purchased only from themeforest(the above
     function onSelectFechaCambio() {
         var fecha = $(this).val();
             fechaf= new Date(fecha);
-        
-        
+
+
         if(fechaf.getDay()==6  || fechaf.getDay() ==5 ){
           alert("¡Lo sentimos el  tramite para el  Registro  de Mandamientos  Judiciales solo es de Lunes a Viernes.!")
           var html_select = '<option></option>';
           html_select += '<option value="">No existen horarios  disponibles para esta fecha</option>'
                 $('#kt-select-horario').html(html_select);
-          
+
         } else {
-           
+
             $.get('/api/horasdisponibles/' + fecha, function(data) {
             var html_select = '<option></option>';
-         
+
             for (let index = 0; index < data.length; index++) {
                 console.log(data[index].id);
                 html_select += '<option value="' + data[index].id + '">' + data[index].hora + '</option>'
@@ -603,7 +614,7 @@ License: You must have a valid license purchased only from themeforest(the above
         //alert(fecha);
 
 
-      
+
 
 
 

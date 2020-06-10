@@ -34,6 +34,13 @@
                 <td>Fecha de Nacimiento: </td>
                 <td>{{$cita->persona->fecha_nacimiento->format('d/m/Y')}}</td>
             </tr>
+
+            <tr>
+                <td>Teléfono:</td>
+                <td>{{$cita->persona->telefono}}</td>
+            </tr>
+            
+
         </table>
 
         <table>

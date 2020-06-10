@@ -275,9 +275,17 @@ License: You must have a valid license purchased only from themeforest(the above
 
                                         <div class="kt-widget__item">
                                             <div class="kt-widget__contact">
-                                                <span class="kt-widget__label">Fecha de Nacimiento::</span>
+                                                <span class="kt-widget__label">Fecha de Nacimiento:</span>
                                                 <span
                                                     class="kt-widget__data"><strong>{{ $datos_cita->persona->fecha_nacimiento->format('d/m/Y') }}</strong></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="kt-widget__item">
+                                            <div class="kt-widget__contact">
+                                                <span class="kt-widget__label">Teléfono:</span>
+                                                <span
+                                                    class="kt-widget__data"><strong>{{ $datos_cita->persona->telefono }}</strong></span>
                                             </div>
                                         </div>
 
