@@ -34,7 +34,7 @@
    
 
     <div>
-    <font size="3">
+    <font size="2">
         <table>
             <tr>
                 <th colspan="2">DATOS GENERALES DE LA PERSONA QUE REALIZA SU CITA</th>
@@ -121,7 +121,7 @@
 
             <tr>
                 <td>-Matricula consular o pasaporte
-                    vigente</td>
+                    vigente(copia)</td>
 
             </tr>
 
@@ -173,7 +173,7 @@
 
             </tr>
             <tr>
-                <td>-Horario exclusivo de 2:00 a 3:00 de la tarde, de lunes a viernes.</td>
+                <td>-Horario exclusivo para agendar su cita de 2:00 a 3:00 de la tarde, de lunes a viernes.</td>
 
             </tr>
             <tr>
@@ -224,6 +224,10 @@
             <tr>
                 <td>-Previo a la digitalización de huellas y toma de fotografía, deberá utilizar gel antibacterial.</td>
             </tr>
+
+            <tr>
+                <td ALIGN="right"> <img height="100px" src="{{ public_path('assets/logos_fiscalia/imagen_salud.png')}}"></td>
+            </tr>
         
 
 
@@ -245,6 +249,11 @@
             </tr>
             <tr>
                 <td>-Para mayor información: 01 (492) 92 5 60 54, en horario de 2:00 a 3:00 de la tarde.</td>
+
+            </tr>
+
+            <tr>
+                <td>-La cita agendada podrá estar sujeta a cambios para causas emergentes en cuyo caso se notificara su cambio oportunamente.</td>
 
             </tr>
 
