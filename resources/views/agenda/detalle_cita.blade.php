@@ -383,7 +383,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                         <div class="kt-widget__item">
                                             <div class="kt-widget__contact">
                                                 <span class="kt-widget__label">-Matricula consular o pasaporte
-                                                    vigente</span>
+                                                    vigente(Copia)</span>
 
                                             </div>
                                         </div>
@@ -431,7 +431,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
                                         <div class="kt-widget__item">
                                             <div class="kt-widget__contact">
-                                                <span class="kt-widget__label">-Horario exclusivo de 2:00 a 3:00 de la
+                                                <span class="kt-widget__label">-Horario exclusivo para agendar su cita 2:00 a 3:00 de la
                                                     tarde, de lunes a viernes</span>
 
                                             </div>
@@ -577,6 +577,14 @@ License: You must have a valid license purchased only from themeforest(the above
                                         <div class="kt-widget__item">
                                             <div class="kt-widget__contact">
                                                 <span class="kt-widget__label">-Para mayor información: 01 (492) 92 5 60 54, en horario de 2:00 a 3:00 de la tarde.</span>
+
+                                            </div>
+                                        </div>
+
+
+                                        <div class="kt-widget__item">
+                                            <div class="kt-widget__contact">
+                                                <span class="kt-widget__label">-La cita agendada podrá estar sujeta a cambios para causas emergentes en cuyo caso se notificara su cambio oportunamente.</span>
 
                                             </div>
                                         </div>
