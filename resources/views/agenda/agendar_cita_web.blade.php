@@ -603,7 +603,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
             for (let index = 0; index < data.length; index++) {
                 console.log(data[index].id);
-                html_select += '<option value="' + data[index].id + '">' + data[index].hora + '</option>'
+                html_select += '<option value="' + data[index].id +' PM'+ '">' + data[index].hora + '</option>'
                 $('#kt-select-horario').html(html_select);
 
             }

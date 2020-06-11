@@ -13,125 +13,125 @@ class HorarioDeAtencionTableSeeder extends Seeder
     public function run()
     {
         HoraDeAtencion::create([
-            'hora' => '2:00'
+            'hora' => '12:00'
         ]);
 
 
         HoraDeAtencion::create([
-            'hora' => '2:05'
-        ]);
-
-
-
-        HoraDeAtencion::create([
-            'hora' => '2:10'
-        ]);
-
-        HoraDeAtencion::create([
-            'hora' => '2:15'
-        ]);
-
-        HoraDeAtencion::create([
-            'hora' => '2:20'
-        ]);
-
-        HoraDeAtencion::create([
-            'hora' => '2:25'
-        ]);
-
-
-        HoraDeAtencion::create([
-            'hora' => '2:30'
+            'hora' => '12:05'
         ]);
 
 
 
         HoraDeAtencion::create([
-            'hora' => '2:35'
+            'hora' => '12:10'
+        ]);
+
+        HoraDeAtencion::create([
+            'hora' => '12:15'
+        ]);
+
+        HoraDeAtencion::create([
+            'hora' => '12:20'
+        ]);
+
+        HoraDeAtencion::create([
+            'hora' => '12:25'
+        ]);
+
+
+        HoraDeAtencion::create([
+            'hora' => '12:30'
         ]);
 
 
 
         HoraDeAtencion::create([
-            'hora' => '2:40'
+            'hora' => '12:35'
+        ]);
+
+
+
+        HoraDeAtencion::create([
+            'hora' => '12:40'
         ]);
 
 
         HoraDeAtencion::create([
-            'hora' => '2:45'
+            'hora' => '12:45'
         ]);
 
 
         HoraDeAtencion::create([
-            'hora' => '2:50'
+            'hora' => '12:50'
         ]);
 
 
         HoraDeAtencion::create([
-            'hora' => '2:55'
+            'hora' => '12:55'
         ]);
 
 
         HoraDeAtencion::create([
-            'hora' => '3:00'
+            'hora' => '13:00'
         ]);
 
 
         HoraDeAtencion::create([
-            'hora' => '3:05'
+            'hora' => '13:05'
         ]);
 
 
         HoraDeAtencion::create([
-            'hora' => '3:10'
+            'hora' => '13:10'
         ]);
 
 
         HoraDeAtencion::create([
-            'hora' => '3:15'
+            'hora' => '13:15'
         ]);
 
 
         HoraDeAtencion::create([
-            'hora' => '3:20'
+            'hora' => '13:20'
         ]);
 
 
         HoraDeAtencion::create([
-            'hora' => '3:25'
+            'hora' => '13:25'
         ]);
 
 
         HoraDeAtencion::create([
-            'hora' => '3:30'
+            'hora' => '13:30'
         ]);
 
 
         HoraDeAtencion::create([
-            'hora' => '3:35'
+            'hora' => '13:35'
         ]);
 
 
         HoraDeAtencion::create([
-            'hora' => '3:40'
+            'hora' => '13:40'
         ]);
 
         HoraDeAtencion::create([
-            'hora' => '3:45'
-        ]);
-
-
-        HoraDeAtencion::create([
-            'hora' => '3:50'
-        ]);
-
-        HoraDeAtencion::create([
-            'hora' => '3:55'
+            'hora' => '13:45'
         ]);
 
 
         HoraDeAtencion::create([
-            'hora' => '4:00'
+            'hora' => '13:50'
+        ]);
+
+        HoraDeAtencion::create([
+            'hora' => '13:55'
+        ]);
+
+
+        HoraDeAtencion::create([
+            'hora' => '14:00'
         ]);
 
 
