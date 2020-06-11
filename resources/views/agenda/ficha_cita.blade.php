@@ -10,20 +10,34 @@
 
 <body>
 
-    <div style="text-align: center;">
+    <div style="text-align: left;">
 
-        <br>
-        <img src="{{ public_path('assets/logos_fiscalia/original180x90.png')}}" width="200px">
-    </div>
-
-    <center>
-        <h3>CITA PARA TRAMITAR REGISTRO DE MANDAMIENTOS JUDICIALES</h3>
-        <p>(antes CARTA DE ATENCEDENTES NO PENALES)</p>
-    </center>
-    <div>
         <table>
             <tr>
-                <th colspan="2">Datos Generales de la persona que realiza la cita</th>
+                <td>
+                    <h3>Registro de Mandamientos Judiciales </h3>
+                    (antes conocida como CARTA DE ANTECEDENTES NO PENALES)
+                </td>
+                <td ALIGN="right">
+                    <img width="135px" src="{{ public_path('assets/logos_fiscalia/original180x90.png')}}">
+                </td>
+            </tr>
+            <tr>
+
+                <td colspan="2" ALIGN="right">ATENCIÓN POR CITA VÍA ELECTRÓNICA</td>
+            </tr>
+        </table>
+
+
+    </div>
+    <br>
+   
+
+    <div>
+    <font size="3">
+        <table>
+            <tr>
+                <th colspan="2">DATOS GENERALES DE LA PERSONA QUE REALIZA SU CITA</th>
 
             </tr>
             <tr>
@@ -39,13 +53,13 @@
                 <td>Teléfono:</td>
                 <td>{{$cita->persona->telefono}}</td>
             </tr>
-            
+
 
         </table>
-
+       
         <table>
             <tr>
-                <th style="text-align: left;" colspan="2">Datos de la cita</th>
+                <th style="text-align: left;" colspan="2">DATOS DE LA CITA</th>
 
             </tr>
 
@@ -70,13 +84,14 @@
                 <td>{{$cita->t_tramite->nombre}}</td>
             </tr>
         </table>
-
+       
         <table>
+            @if($cita->t_tramite->id ==1)
             <tr>
-                <th style="text-align: left;">Requisitos</th>
+                <th style="text-align: left;">DOCUMENTACIÓN REQUERIDA PARA TRÁMITE PERSONAL</th>
 
             </tr>
-            @if($cita->t_tramite->id ==1)
+
             <tr>
                 <td>-Acta de nacimiento(original)</td>
 
@@ -94,6 +109,11 @@
 
             </tr>
             @else
+
+            <tr>
+                <th style="text-align: left;">DOCUMENTACIÓN REQUERIDA PARA PERSONAS EN EL EXTRANJERO</th>
+
+            </tr>
             <tr>
                 <td>-Acta de nacimiento(original)</td>
 
@@ -123,17 +143,17 @@
 
             <tr>
                 <td>-Del familiar que va realizar el
-                        trámite</td>
+                    trámite</td>
 
             </tr>
             <tr>
-                    <td>&nbsp;&nbsp;&nbsp;-Credencial de elector</td>
-    
-                </tr>
-                <tr>
-                        <td>&nbsp;&nbsp;&nbsp;-Comprobante de domicilio(copia)</td>
-        
-                    </tr>
+                <td>&nbsp;&nbsp;&nbsp;-Credencial de elector</td>
+
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;-Comprobante de domicilio(copia)</td>
+
+            </tr>
 
 
 
@@ -141,15 +161,100 @@
 
 
             @endif
-            <tr>
-                <td>-Cubrir el pago de $174.00(en nuestras
-                    instalaciones).</td>
 
-            </tr>
 
 
 
         </table>
+       
+        <table>
+            <tr>
+                <th colspan="2" style="text-align: left;">CONDICIONES DE SU CITA</th>
+
+            </tr>
+            <tr>
+                <td>-Horario exclusivo de 2:00 a 3:00 de la tarde, de lunes a viernes.</td>
+
+            </tr>
+            <tr>
+                <td>-Servicio limitado a 20 personas diarias </td>
+
+            </tr>
+
+            <tr>
+                <td>-Le rogamos puntualidad para acudir a su cita y estar en nuestras instalaciones 5 minutos
+                    antes, de no ser así, será necesario agendar una nueva cita</td>
+
+            </tr>
+            <tr>
+                <td>-La documentación deberá presentarse como se indica, de no ser así será necesario agendar
+                    una nueva cita.</td>
+            </tr>
+
+            <tr>
+                <td>-El ingreso será en bloques de 5 personas.</td>
+            </tr>
+
+
+        </table>
+
+       
+        <table>
+            <tr>
+                <th colspan="2" style="text-align: left;">MEDIDAS DE HIGIENE Y PREVENCIÓN</th>
+
+            </tr>
+            <tr>
+                <td>-Acudir solo la persona interesada.</td>
+
+            </tr>
+            <tr>
+                <td>-Mantener sana distancia. </td>
+
+            </tr>
+
+            <tr>
+                <td>-Uso de cubreboca.</td>
+
+            </tr>
+            <tr>
+                <td>-Realizar lavado de manos previo a formalizar el pago y la entrega de documentos.</td>
+            </tr>
+
+            <tr>
+                <td>-Previo a la digitalización de huellas y toma de fotografía, deberá utilizar gel antibacterial.</td>
+            </tr>
+            <tr>
+                <td ALIGN="right"> <img height="90px" src="{{ public_path('assets/logos_fiscalia/imagen_salud.png')}}">
+                </td>
+            </tr>
+
+
+        </table>
+
+        <table>
+            <tr>
+                <th style="text-align: left;">MAS INFORMACIÓN</th>
+
+            </tr>
+
+            <tr>
+                <td>-Costo del servicio $174.00</td>
+
+            </tr>
+            <tr>
+                <td>-El documento solicitado se entrega al concluir el trámite</td>
+
+            </tr>
+            <tr>
+                <td>-Para mayor información: 01 (492) 92 5 60 54, en horario de 2:00 a 3:00 de la tarde.</td>
+
+            </tr>
+
+
+        </table>
+    </font>
+
 
 
     </div>

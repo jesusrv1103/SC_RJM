@@ -235,10 +235,10 @@ License: You must have a valid license purchased only from themeforest(the above
                                                 Cita se ha registrado con éxito
                                             </h3>
 
-                                          
+
                                         </div>
-                                        <div class="kt-portlet__head-label" >
-                                        <a class="btn btn-success" href="{{ route('acuse.cita',$datos_cita->id) }}">
+                                        <div class="kt-portlet__head-label">
+                                            <a class="btn btn-success" href="{{ route('acuse.cita',$datos_cita->id) }}">
                                                 Descargar Acuse
                                             </a>
                                         </div>
@@ -330,12 +330,16 @@ License: You must have a valid license purchased only from themeforest(the above
                                         </div>
                                         <br><br>
 
+
+                                        @if($datos_cita->t_tramite->id ==1)
+
                                         <div class="kt-widget14__header">
                                             <h3 class="kt-widget14__title">
-                                                <i class="flaticon-avatar kt-font-brand"></i> <span>Requisitos</span>
+                                                <i class="flaticon-avatar kt-font-brand"></i> <span>DOCUMENTACIÓN
+                                                    REQUERIDA PARA TRÁMITE PERSONAL</span>
                                             </h3>
                                         </div>
-                                        @if($datos_cita->t_tramite->id ==1)
+
                                         <div class="kt-widget__item">
                                             <div class="kt-widget__contact">
                                                 <span class="kt-widget__label">-Acta de nacimiento(original)</span>
@@ -362,8 +366,14 @@ License: You must have a valid license purchased only from themeforest(the above
                                             </div>
                                         </div>
 
-                                      
+
                                         @else
+                                        <div class="kt-widget14__header">
+                                            <h3 class="kt-widget14__title">
+                                                <i class="flaticon-avatar kt-font-brand"></i> <span>DOCUMENTACIÓN
+                                                    REQUERIDA PARA PERSONAS EN EL EXTRANJERO</span>
+                                            </h3>
+                                        </div>
                                         <div class="kt-widget__item">
                                             <div class="kt-widget__contact">
                                                 <span class="kt-widget__label">-Acta de nacimiento(original)</span>
@@ -410,10 +420,163 @@ License: You must have a valid license purchased only from themeforest(the above
                                             </div>
                                         </div>
                                         @endif
+                                        <br>
+
+                                        <div class="kt-widget14__header">
+                                            <h3 class="kt-widget14__title">
+                                                <i class="flaticon-avatar kt-font-brand"></i> <span>CONDICIONES DE SU
+                                                    CITA</span>
+                                            </h3>
+                                        </div>
+
                                         <div class="kt-widget__item">
                                             <div class="kt-widget__contact">
-                                                <span class="kt-widget__label">-Cubrir el pago de $174.00(en nuestras
-                                                    instalaciones).</span>
+                                                <span class="kt-widget__label">-Horario exclusivo de 2:00 a 3:00 de la
+                                                    tarde, de lunes a viernes</span>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="kt-widget__item">
+                                            <div class="kt-widget__contact">
+                                                <span class="kt-widget__label">-Servicio limitado a 20 personas
+                                                    diarias.</span>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="kt-widget__item">
+                                            <div class="kt-widget__contact">
+                                                <span class="kt-widget__label">-Le rogamos puntualidad para acudir a su
+                                                    cita y estar en nuestras instalaciones 5 minutos
+                                                    antes, de no ser así, será necesario agendar una nueva cita.</span>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="kt-widget__item">
+                                            <div class="kt-widget__contact">
+                                                <span class="kt-widget__label">-La documentación deberá presentarse como
+                                                    se indica, de no ser así será necesario agendar
+                                                    una nueva cita.</span>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="kt-widget__item">
+                                            <div class="kt-widget__contact">
+                                                <span class="kt-widget__label">-El ingreso será en bloques de 5
+                                                    personas.</span>
+
+                                            </div>
+                                        </div>
+                                        <br>
+
+                                        <div class="kt-widget14__header">
+                                            <h3 class="kt-widget14__title">
+                                                <i class="flaticon-avatar kt-font-brand"></i> <span>MEDIDAS DE HIGIENE Y
+                                                    PREVENCIÓN</span>
+                                            </h3>
+                                        </div>
+
+                                        <div class="kt-widget__item">
+                                            <div class="kt-widget__contact">
+                                                <span class="kt-widget__label">-Acudir solo la
+                                                    persona interesada.</span>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="kt-widget__item">
+                                            <div class="kt-widget__contact">
+                                                <span class="kt-widget__label">-Acudir solo la
+                                                    persona interesada.</span>
+
+                                            </div>
+                                        </div>
+
+
+                                        <div class="kt-widget__item">
+                                            <div class="kt-widget__contact">
+                                                <span class="kt-widget__label">-Mantener sana
+                                                    distancia.</span>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="kt-widget__item">
+                                            <div class="kt-widget__contact">
+                                                <span class="kt-widget__label">-Uso de
+                                                    cubreboca.</span>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="kt-widget__item">
+                                            <div class="kt-widget__contact">
+                                                <span class="kt-widget__label">-Realizar lavado de manos previo a
+                                                    formalizar el pago y la entrega de documentos</span>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="kt-widget__item">
+                                            <div class="kt-widget__contact">
+                                                <span class="kt-widget__label">-Realizar lavado de manos previo a
+                                                    formalizar el pago y la entrega de documentos</span>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="kt-widget__item">
+                                            <div class="kt-widget__contact">
+                                                <span class="kt-widget__label">-Previo a la digitalización de huellas y
+                                                    toma de fotografía, deberá utilizar gel antibacterial.</span>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="kt-widget__item">
+                                                <div class="kt-widget__contact">
+                                                      
+                                                        <img alt="Logo" height="90px" src="/assets/logos_fiscalia/imagen_salud.png" />
+    
+                                                </div>
+                                            </div>
+
+                                        <br>
+
+
+
+
+
+                                        <div class="kt-widget14__header">
+                                            <h3 class="kt-widget14__title">
+                                                <i class="flaticon-avatar kt-font-brand"></i> <span>MAS
+                                                    INFORMACIÓN</span>
+                                            </h3>
+                                        </div>
+
+
+                                        <div class="kt-widget__item">
+                                            <div class="kt-widget__contact">
+                                                <span class="kt-widget__label">-Costo del servicio $174.00</span>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="kt-widget__item">
+                                            <div class="kt-widget__contact">
+                                                <span class="kt-widget__label">-El documento solicitado se entrega al
+                                                    concluir el trámite.</span>
+
+                                            </div>
+                                        </div>
+
+
+                                        <div class="kt-widget__item">
+                                            <div class="kt-widget__contact">
+                                                <span class="kt-widget__label">-Para mayor información: 01 (492) 92 5 60 54, en horario de 2:00 a 3:00 de la tarde.</span>
 
                                             </div>
                                         </div>
@@ -422,9 +585,10 @@ License: You must have a valid license purchased only from themeforest(the above
 
 
 
+
                                     </div>
 
-
+                                    <!--
 
                                     <div class="form-group form-group-last">
                                         <div class="alert alert-secondary" role="alert">
@@ -446,7 +610,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                             </div>
                                         </div>
                                     </div>
-
+-->
 
                                     <!--end::Form-->
                                 </div>
@@ -698,8 +862,13 @@ License: You must have a valid license purchased only from themeforest(the above
        
         //alert(fecha);
 
-
+       
+        Ya se encuentran
         $.get('/api/horasdisponibles/' + fecha, function(data) {
+
+            if(data=="Ya se encuentran"){
+                alert("Ya se encuentran");
+            }
             var html_select = '<option></option>';
             for (let index = 0; index < data.length; index++) {
 
