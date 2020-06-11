@@ -19,6 +19,7 @@ Route::get('descargar/{acuse}', 'Agenda\CitaController@descargarAcuse')->name('a
 
 Route::get('detalles/cita/{id}', 'Agenda\CitaController@detalleCita')->name('agenda.detalle.cita');
 
+
 Route::get('citas/dia', 'Agenda\CitaController@index')->name('citasdeldia')->middleware('auth');;
 
 Route::get('citas/general', 'Agenda\CitaController@listadoGeneralCitas')->name('listadogeneral')->middleware('auth');;

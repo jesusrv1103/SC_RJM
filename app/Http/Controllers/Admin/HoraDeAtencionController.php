@@ -38,7 +38,7 @@ class HoraDeAtencionController extends Controller
 
             }
 
-    return  $horarios=HoraDeAtencion::whereNotIn('id', $horas_completas)->get();
+ //   return  $horarios=HoraDeAtencion::whereNotIn('id', $horas_completas)->get();
         
     }
 }
