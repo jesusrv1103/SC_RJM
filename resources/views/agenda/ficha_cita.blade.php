@@ -224,10 +224,7 @@
             <tr>
                 <td>-Previo a la digitalización de huellas y toma de fotografía, deberá utilizar gel antibacterial.</td>
             </tr>
-            <tr>
-                <td ALIGN="right"> <img height="90px" src="{{ public_path('assets/logos_fiscalia/imagen_salud.png')}}">
-                </td>
-            </tr>
+        
 
 
         </table>
