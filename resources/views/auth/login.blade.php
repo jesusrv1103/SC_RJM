@@ -10,7 +10,7 @@
 
 		<!--end::Base Path -->
 		<meta charset="utf-8" />
-		<title>Login Adquisinet</title>
+		<title>Login SCMJ |FGJEZ</title>
 		<meta name="description" content="Login page example">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -121,10 +121,7 @@
 									
 									<div class="kt-login__actions">
                                         <button type="submit"  class="btn btn-brand btn-elevate kt-login__btn-primary button button-block">Ingresar</button>
-
-									</div>
-								</form>
-							</div>
+                                        https://mandamientos.fiscaliazacatecas.gob.mx/login
 						
 					
 							
