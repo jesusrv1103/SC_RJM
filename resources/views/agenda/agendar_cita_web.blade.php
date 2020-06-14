@@ -38,7 +38,6 @@ License: You must have a valid license purchased only from themeforest(the above
                 sessionStorage.fonts = true;
             }
         });
-
     </script>
 
     <!--end::Fonts -->
@@ -255,7 +254,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                             <div class="form-group row">
                                                 <label for="example-date-input" class="col-2 col-form-label">Fecha de nacimiento: <span style="color:red;">*</span></label>
                                                 <div class="col-10">
-                                                    <input class="form-control" name="fecha_nacimiento" type="date"   value="" id="example-date-input" required>
+                                                    <input class="form-control" name="fecha_nacimiento" type="date" value="" id="example-date-input" required>
                                                 </div>
                                             </div>
 
@@ -263,9 +262,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                 <label for="example-text-input" class="col-2 col-form-label">Telefono:<span style="color:red;">*</span> </label>
                                                 <div class="col-10">
 
-                                                <input type="text" class="form-control"
-                                                             id="numeroTelefono_id"
-                                                            name="telefono" onkeypress=" return soloNumeros(event);" required>
+                                                    <input type="text" class="form-control" id="numeroTelefono_id" name="telefono" onkeypress=" return soloNumeros(event);" required>
                                                     <span class="form-text text-muted">Por favor ingrese su numero de teléfono..</span>
                                                 </div>
                                             </div>
@@ -281,7 +278,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                                 <label class="col-2 col-form-label">Tipo de trámite: <span style="color:red;">*</span></label>
                                                 <div class="col-10">
                                                     <select class="form-control kt-select2" id="kt-select-tipo-tramite" style="width: 100%" name="tipo_tramite" required>
-                                                       <option ></option>
+                                                        <option></option>
                                                         @foreach ($tipo_tramites as $tramite)
                                                         <option value="{{$tramite->id}}">
                                                             {{$tramite->nombre}}</option>
@@ -294,19 +291,19 @@ License: You must have a valid license purchased only from themeforest(the above
 
                                             @php
 
-                                              $fecha_max="";
+                                            $fecha_max="";
 
-                                              if( date("w", strtotime(now())) == 4){
-                                                $fecha_max= date('Y-m-d', strtotime(now()."+ 5 days"));
-                                                } elseif( date("w", strtotime(now())) == 5){
-                                                    $fecha_max= date('Y-m-d', strtotime(now()."+ 4 days"));
-                                                } elseif( date("w", strtotime(now())) == 6){
-                                                    $fecha_max= date('Y-m-d', strtotime(now()."+ 4 days"));
-                                                } elseif( date("w", strtotime(now())) == 0){
-                                                    $fecha_max= date('Y-m-d', strtotime(now()."+ 3 days"));
-                                                }
-                                              
-                                              $fecha_min= date('Y-m-d', strtotime(now()."+ 1 days"));
+                                            if( date("w", strtotime(now())) == 4){
+                                            $fecha_max= date('Y-m-d', strtotime(now()."+ 5 days"));
+                                            } elseif( date("w", strtotime(now())) == 5){
+                                            $fecha_max= date('Y-m-d', strtotime(now()."+ 4 days"));
+                                            } elseif( date("w", strtotime(now())) == 6){
+                                            $fecha_max= date('Y-m-d', strtotime(now()."+ 4 days"));
+                                            } elseif( date("w", strtotime(now())) == 0){
+                                            $fecha_max= date('Y-m-d', strtotime(now()."+ 3 days"));
+                                            }
+
+                                            $fecha_min= date('Y-m-d', strtotime(now()."+ 1 days"));
 
 
                                             @endphp
@@ -323,7 +320,7 @@ License: You must have a valid license purchased only from themeforest(the above
                                             <div class="form-group row">
                                                 <label class="col-2 col-form-label">Horarios disponibles: <span style="color:red;">*</span></label>
                                                 <div class="col-10">
-                                                    <select class="form-control  kt-select2"  id="kt-select-horario" style="width: 100%" name="hora_cita" required>
+                                                    <select class="form-control  kt-select2" id="kt-select-horario" style="width: 100%" name="hora_cita" required>
 
 
                                                     </select>
@@ -585,8 +582,8 @@ License: You must have a valid license purchased only from themeforest(the above
 
 
     $('#kt-select-horario, #kt_select2_3_validate').select2({
-            placeholder: "Seleccione alguno de los horarios disponibles.",
-        });
+        placeholder: "Seleccione alguno de los horarios disponibles.",
+    });
 
     $(function() {
         $('#fecha_cita').on('change', onSelectFechaCambio);
@@ -594,32 +591,39 @@ License: You must have a valid license purchased only from themeforest(the above
     });
 
     $('#kt-select-tipo-tramite, #kt_select2_3_validate').select2({
-            placeholder: "Seleccione tipo  de tramite.",
-        });
+        placeholder: "Seleccione tipo  de tramite.",
+    });
 
     function onSelectFechaCambio() {
         var fecha = $(this).val();
-            fechaf= new Date(fecha);
+        fechaf = new Date(fecha);
 
 
-        if(fechaf.getDay()==6  || fechaf.getDay() ==5 ){
-          alert("¡Lo sentimos el  tramite para el  Registro  de Mandamientos  Judiciales solo es de Lunes a Viernes.!")
-          var html_select = '<option></option>';
-          html_select += '<option value="">No existen horarios  disponibles para esta fecha</option>'
-                $('#kt-select-horario').html(html_select);
+        if (fechaf.getDay() == 6 || fechaf.getDay() == 5) {
+            alert("¡Lo sentimos el  tramite para el  Registro  de Mandamientos  Judiciales solo es de Lunes a Viernes.!")
+            var html_select = '<option></option>';
+            html_select += '<option value="">No existen horarios  disponibles para esta fecha</option>'
+            $('#kt-select-horario').html(html_select);
 
         } else {
 
+
             $.get('/api/horasdisponibles/' + fecha, function(data) {
-            var html_select = '<option></option>';
+                if (data.length ==0) {
 
-            for (let index = 0; index < data.length; index++) {
-                console.log(data[index].id);
-                html_select += '<option value="' + data[index].id + '">' + data[index].hora + '</option>'
-                $('#kt-select-horario').html(html_select);
+                    alert("Lo  sentimos,  se han agendado  todas  las citas disponibles para  este día.");
 
-            }
-        });
+                } else {
+                    var html_select = '<option></option>';
+
+                    for (let index = 0; index < data.length; index++) {
+                        console.log(data[index].id);
+                        html_select += '<option value="' + data[index].id + '">' + data[index].hora + '</option>'
+                        $('#kt-select-horario').html(html_select);
+
+                    }
+                }
+            });
 
 
         }

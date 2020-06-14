@@ -5,7 +5,7 @@
     <div class="kt-container  kt-container--fluid ">
         <div class="kt-subheader__main">
             <h3 class="kt-subheader__title">
-                Listado  de   Citas
+                Listado de Citas
             </h3>
             <span class="kt-subheader__separator kt-hidden"></span>
             <div class="kt-subheader__breadcrumbs">
@@ -46,8 +46,7 @@
                 <div class="form-group row">
                     <label for="example-text-input" class="col-2 col-form-label">Nombre completo:<span style="color:red;">*</span></label>
                     <div class="col-8">
-                        <input class="form-control" placeholder="IVAN GALVEZ GARCIA"  type="text" onchange="mayus(this);" name="nombre_persona"
-                            id="example-text-input"  required>
+                        <input class="form-control" placeholder="IVAN GALVEZ GARCIA" type="text" onchange="mayus(this);" name="nombre_persona" id="example-text-input" required>
                         <span class="form-text text-muted">
                             Por favor ingrese su nombre completo ( ejemplo: JUAN LÓPEZ GARCÍA).
                         </span>
@@ -58,7 +57,7 @@
                 <div class="form-group row">
                     <label for="example-text-input" class="col-2 col-form-label">Fecha de nacimiento:<span style="color:red;">*</span></label>
                     <div class="col-8">
-                        <input class="form-control" name="fecha_nacimiento"  type="date">
+                        <input class="form-control" name="fecha_nacimiento" type="date">
                         <span class="form-text text-muted">
 
                             Por favor ingresa fecha de nacimiento
@@ -70,8 +69,8 @@
                     <label for="example-text-input" class="col-2 col-form-label">Numero de teléfono:<span style="color:red;">*</span></label>
                     <div class="col-8">
 
-                    <input type="text" class="form-control" id="numeroTelefono_id" name="telefono" onkeypress=" return soloNumeros(event);" required>
-                     
+                        <input type="text" class="form-control" id="numeroTelefono_id" name="telefono" onkeypress=" return soloNumeros(event);" required>
+
                         <span class="form-text text-muted">
 
                             Por favor ingrese su numero de teléfono.
@@ -80,7 +79,7 @@
                 </div>
 
 
-             
+
 
                 <div class="form-group row">
                     <label for="example-text-input" class="col-2 col-form-label">Tipo de trámite:<span style="color:red;">*</span></label>
@@ -99,10 +98,10 @@
 
                 @php
 
-                    $fecha_max= date('Y-m-d', strtotime(now()."+ 3 days"));
-                    $fecha_min= date('Y-m-d', strtotime(now()."+ 1 days"));
+                $fecha_max= date('Y-m-d', strtotime(now()."+ 3 days"));
+                $fecha_min= date('Y-m-d', strtotime(now()."+ 1 days"));
 
-            @endphp
+                @endphp
 
 
 
@@ -116,7 +115,7 @@
                 <div class="form-group row">
                     <label class="col-2 col-form-label">Horarios disponibles: <span style="color:red;">*</span></label>
                     <div class="col-8">
-                        <select class="form-control  kt-select2" onchange="verificarDisponibilidad();" id="kt-select-horario" style="width: 100%" name="hora_cita" required>
+                        <select class="form-control  kt-select2" id="kt-select-horario" style="width: 100%" name="hora_cita" required>
 
                         </select>
                         <span class="form-text text-muted">Seleccione alguno de los horarios disponibles.</span>
@@ -167,7 +166,7 @@
 <!--begin::Page Scripts(used by this page) -->
 <script src="/assets/vendors/general/select2/dist/js/select2.full.js" type="text/javascript"></script>
 
-	<!--begin::Page Scripts(used by this page) -->
+<!--begin::Page Scripts(used by this page) -->
 <script src="/assets/js/demo1/pages/crud/forms/widgets/select2.js" type="text/javascript"></script>
 
 
@@ -225,35 +224,41 @@
 
 
     $('#kt-select-horario, #kt_select2_3_validate').select2({
-            placeholder: "Seleccione alguno de los horarios disponibles.",
-        });
+        placeholder: "Seleccione alguno de los horarios disponibles.",
+    });
 
     $('#kt-tipo-tramite, #kt_select2_3_validate').select2({
-            placeholder: "Seleccione tipo de tramite.",
-        });
+        placeholder: "Seleccione tipo de tramite.",
+    });
 
     function onSelectFechaCambio() {
         var fecha = $(this).val();
-            fechaf= new Date(fecha);
+        fechaf = new Date(fecha);
 
 
-        if(fechaf.getDay()==6  || fechaf.getDay() ==5 ){
-          alert("¡Lo sentimos el  tramite para el  Registro  de Mandamientos  Judiciales solo es de Lunes a Viernes.!")
-          var html_select = '<option></option>';
-          html_select += '<option value="">No existen horarios  disponibles para esta fecha</option>'
-                $('#kt-select-horario').html(html_select);
+        if (fechaf.getDay() == 6 || fechaf.getDay() == 5) {
+            alert("¡Lo sentimos el  tramite para el  Registro  de Mandamientos  Judiciales solo es de Lunes a Viernes.!")
+            var html_select = '<option></option>';
+            html_select += '<option value="">No existen horarios  disponibles para esta fecha</option>'
+            $('#kt-select-horario').html(html_select);
 
         } else {
 
             $.get('/api/horasdisponibles/' + fecha, function(data) {
-            var html_select = '<option></option>';
-            for (let index = 0; index < data.length; index++) {
 
-                html_select += '<option value="' + data[index].id + '">' + data[index].hora + '</option>'
-                $('#kt-select-horario').html(html_select);
+                if (data.length == 0) {
+                    alert("Lo  sentimos,  se han agendado  todas  las citas disponibles para  este día.");
+                } else {
+                    var html_select = '<option></option>';
+                    for (let index = 0; index < data.length; index++) {
 
-            }
-        });
+                        html_select += '<option value="' + data[index].id + '">' + data[index].hora + '</option>'
+                        $('#kt-select-horario').html(html_select);
+
+                    }
+                }
+
+            });
 
 
         }
