@@ -84,9 +84,21 @@ class CitaController extends Controller
 
     public function listadoGeneralCitas()
     {
-        $citas = Cita::get();
 
-        return view('agenda.listado_general', compact('citas'));
+
+        if(auth()->user()->name =="Guardia"){
+            $dia_actual = date('Y-m-d', strtotime(now()));
+            $citas = Cita::where('fecha', '=', $dia_actual)
+            ->get();
+    
+            return view('agenda.index', compact('citas'));
+        } else {
+            $citas = Cita::get();
+            return view('agenda.listado_general', compact('citas'));
+        }
+        
+     
+
     }
 
     public function detalleCita($id)
