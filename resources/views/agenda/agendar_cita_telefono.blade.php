@@ -98,10 +98,24 @@
 
                 @php
 
-                $fecha_max= date('Y-m-d', strtotime(now()."+ 3 days"));
-                $fecha_min= date('Y-m-d', strtotime(now()."+ 1 days"));
+                    $fecha_max="";
 
-                @endphp
+                    if( date("w", strtotime(now())) == 4){
+                    $fecha_max= date('Y-m-d', strtotime(now()."+ 5 days"));
+                    } elseif( date("w", strtotime(now())) == 5){
+                    $fecha_max= date('Y-m-d', strtotime(now()."+ 4 days"));
+                    } elseif( date("w", strtotime(now())) == 6){
+                    $fecha_max= date('Y-m-d', strtotime(now()."+ 4 days"));
+                    } elseif( date("w", strtotime(now())) == 0){
+                    $fecha_max= date('Y-m-d', strtotime(now()."+ 3 days"));
+                    }else{
+                        $fecha_max= date('Y-m-d', strtotime(now()."+ 3 days"));
+                    }
+
+                    $fecha_min= date('Y-m-d', strtotime(now()."+ 1 days"));
+
+
+                    @endphp
 
 
 

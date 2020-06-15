@@ -301,6 +301,8 @@ License: You must have a valid license purchased only from themeforest(the above
                                             $fecha_max= date('Y-m-d', strtotime(now()."+ 4 days"));
                                             } elseif( date("w", strtotime(now())) == 0){
                                             $fecha_max= date('Y-m-d', strtotime(now()."+ 3 days"));
+                                            }else{
+                                                $fecha_max= date('Y-m-d', strtotime(now()."+ 3 days"));
                                             }
 
                                             $fecha_min= date('Y-m-d', strtotime(now()."+ 1 days"));
